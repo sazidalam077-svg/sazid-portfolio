@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sazid Alam - Frontend Developer & UI/UX Designer</title>
+    <meta name="description" content="Frontend Web Developer & UI/UX Designer specializing in React, Figma, and building practical web applications. Available for freelance work.">
+    <meta name="keywords" content="frontend developer, UI/UX designer, React, Figma, web developer, freelance, portfolio">
+    <meta name="author" content="Sazid Alam">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Sazid Alam - Frontend Developer & UI/UX Designer">
+    <meta property="og:description" content="Frontend Web Developer & UI/UX Designer specializing in React, Figma, and building practical web applications.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sazidbuilds.in">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen" style="display: none;">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Loading amazing work...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">SA.</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Hi, I'm</span>
+                        <span class="name">Sazid Alam</span>
+                    </h1>
+                    <div class="hero-role">
+                        <span class="role-text">Frontend Web Developer</span>
+                        <span class="role-divider">|</span>
+                        <span class="role-text">UI/UX Designer</span>
+                    </div>
+                    <p class="hero-description">
+                        I design and build clean, user-focused web applications with modern technologies. 
+                        Passionate about creating practical productivity tools that make a difference.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View Projects</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Hire Me</span>
+                            <i class="fas fa-briefcase"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-image-wrapper">
+                            <img src="images/WhatsApp Image 2026-02-05 at 1.53.55 PM.jpeg" alt="Sazid Alam" class="profile-img">
+                            <div class="profile-glow"></div>
+                        </div>
+                        <div class="profile-status">
+                            <span class="status-dot"></span>
+                            <span class="status-text">Available for freelance work</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        Frontend Developer & UI/UX Designer who bridges the gap between design and development. 
+                        I specialize in creating clean, intuitive web applications that users love to interact with.
+                    </p>
+                    <p class="about-details">
+                        Experienced with JavaScript, React, Figma, and modern UI practices, with basic Python knowledge 
+                        for logic and backend understanding. Currently pursuing my undergraduate degree while building 
+                        practical tools that solve real-world problems. I'm passionate about building practical productivity 
+                        tools that make a real difference in people's daily lives.
+                    </p>
+                    <div class="soft-skills">
+                        <h3>Core Values & Skills</h3>
+                        <div class="skill-badges">
+                            <span class="skill-badge">Communication</span>
+                            <span class="skill-badge">Teamwork</span>
+                            <span class="skill-badge">Problem-solving</span>
+                            <span class="skill-badge">User-focused Design</span>
+                            <span class="skill-badge">Clean Code</span>
+                            <span class="skill-badge">React Development</span>
+                            <span class="skill-badge">Figma Design</span>
+                            <span class="skill-badge">Freelance Ready</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">1+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">React</div>
+                        <div class="stat-label">Primary Framework</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-level">
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-level">
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-level">
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fab fa-react"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="skill-level">
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Design & Tools</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fab fa-figma"></i>
+                                <span>Figma</span>
+                            </div>
+                            <div class="skill-level">
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-level">
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fas fa-code"></i>
+                                <span>VS Code</span>
+                            </div>
+                            <div class="skill-level">
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fab fa-python"></i>
+                                <span>Python (Basic)</span>
+                            </div>
+                            <div class="skill-level">
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="60"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <img src="images/productivity tools.png" alt="Productivity Tool">
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Productivity Tool Web Application</h3>
+                            <span class="project-badge featured-badge">Featured</span>
+                        </div>
+                        <p class="project-description">
+                            A productivity-focused web application that helps users manage daily tasks, 
+                            schedule time effectively, and improve overall productivity through a clean 
+                            and user-friendly interface.
+                        </p>
+                        <div class="project-features">
+                            <span class="feature-tag"><i class="fas fa-check"></i> Task Management</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> Time Scheduling</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> Responsive Design</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-role">
+                                <i class="fas fa-user"></i>
+                                <span>Frontend Developer & UI/UX Designer</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://sazidalam077-svg.github.io/productivity-tool/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="https://github.com/sazidalam077-svg/productivity-tool" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <img src="images/live version.jpg" alt="Productivity Tool Live Version Screenshot">
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Productivity Tool - Live Version</h3>
+                        </div>
+                        <p class="project-description">
+                            Live version of the productivity tool with actual implementation. 
+                            Features task management, time scheduling, and productivity tracking 
+                            with a clean, modern interface design.
+                        </p>
+                        <div class="project-features">
+                            <span class="feature-tag"><i class="fas fa-check"></i> Live Application</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> User-Friendly Interface</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> Mobile Responsive</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-role">
+                                <i class="fas fa-user"></i>
+                                <span>Frontend Developer & UI/UX Designer</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://sazidalam077-svg.github.io/productivity-tool/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="https://github.com/sazidalam077-svg/productivity-tool" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <img src="https://via.placeholder.com/350x250/1a1a2e/16213e?text=Portfolio+Website" alt="Portfolio Website">
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Personal Portfolio Website</h3>
+                        </div>
+                        <p class="project-description">
+                            Modern, responsive portfolio website with dark theme, smooth animations, 
+                            and optimized performance. Features include scroll animations, contact forms, 
+                            and mobile-first design.
+                        </p>
+                        <div class="project-features">
+                            <span class="feature-tag"><i class="fas fa-check"></i> Responsive Design</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> Animations</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> SEO Optimized</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-role">
+                                <i class="fas fa-user"></i>
+                                <span>Frontend Developer & UI/UX Designer</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <img src="https://via.placeholder.com/350x250/1a1a2e/16213e?text=UI+Design+System" alt="UI Design System">
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Figma</span>
+                            <span class="tech-tag">UI Design</span>
+                            <span class="tech-tag">Prototyping</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">UI Design System Components</h3>
+                        </div>
+                        <p class="project-description">
+                            Comprehensive design system with reusable UI components, color palettes, 
+                            typography scales, and interaction patterns for consistent web applications.
+                        </p>
+                        <div class="project-features">
+                            <span class="feature-tag"><i class="fas fa-check"></i> Component Library</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> Design Tokens</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> Interactive Prototypes</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-role">
+                                <i class="fas fa-user"></i>
+                                <span>UI/UX Designer</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View on Figma
+                                </a>
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    Case Study
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Undergraduate Studies</h3>
+                            <span class="timeline-date">Current</span>
+                        </div>
+                        <p class="timeline-description">
+                            Currently pursuing undergraduate degree while building practical web development 
+                            skills and working on real-world projects. Focusing on frontend development 
+                            and UI/UX design principles with React and modern JavaScript frameworks.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="timeline-skill">Self-taught Developer</span>
+                            <span class="timeline-skill">Project-based Learning</span>
+                            <span class="timeline-skill">Continuous Improvement</span>
+                            <span class="timeline-skill">Freelance Focus</span>
+                            <span class="timeline-skill">Modern Web Technologies</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Frontend Development Journey</h3>
+                            <span class="timeline-date">2023 - Present</span>
+                        </div>
+                        <p class="timeline-description">
+                            Started my journey in frontend development with HTML, CSS, and JavaScript. 
+                            Progressed to React, learned UI/UX design with Figma, and built several 
+                            practical projects including productivity tools and web applications.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="timeline-skill">HTML/CSS/JavaScript</span>
+                            <span class="timeline-skill">React Development</span>
+                            <span class="timeline-skill">UI/UX Design</span>
+                            <span class="timeline-skill">Figma Prototyping</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Work Together</h3>
+                    <p>
+                        I'm always interested in hearing about new projects and opportunities. 
+                        Whether you need a frontend developer, UI/UX designer, or have a creative project in mind, 
+                        feel free to reach out! I'm particularly passionate about productivity tools and 
+                        user-focused applications.
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:sazidalam077@gmail.com">sazidalam077@gmail.com</a>
+                                <p>Best for project inquiries</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/sazid-alam-04b32231a/" target="_blank">Connect with me</a>
+                                <p>Professional networking</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/sazidalam077-svg" target="_blank">Check my work</a>
+                                <p>View my projects and code</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Instagram</h4>
+                                <a href="https://www.instagram.com/being_yawn_/" target="_blank">Follow me</a>
+                                <p>Creative updates and behind the scenes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="availability-status">
+                        <h4>Current Status</h4>
+                        <div class="status-badge available">
+                            <i class="fas fa-circle"></i>
+                            <span>Available for freelance work</span>
+                        </div>
+                        <p>Open to frontend development, UI/UX design, and React projects</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Me a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject (e.g., Project Proposal)" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tell me about your project, timeline, and budget..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <p class="form-note">
+                        I typically respond within 24-48 hours. For urgent inquiries, please mention it in your message.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Sazid Alam. Built with passion and lots of coffee ☕</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/sazid-alam-04b32231a/" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/sazidalam077-svg" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/being_yawn_/" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
